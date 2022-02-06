@@ -1,3 +1,5 @@
+import './TodoItem.css'
+
 interface Props {
     title: string;
     checkbox: boolean;
@@ -5,7 +7,7 @@ interface Props {
 
 export const TodoItem: React.FC<Props> = (props) => {
     return (
-        <div>
+        <div className="todo-item">
             <p>{props.title}</p>
         </div>
     )
