@@ -3,12 +3,12 @@ import './TodoItem.css'
 
 interface Props {
     title: string;
-    checkbox: boolean;
+    done: boolean;
 }
 
 export const TodoItem: React.FC<Props> = (props) => {
 
-    const [done, setDone] = useState(props.checkbox);
+    const [done, setDone] = useState(props.done);
 
     const checkboxChangeHandler = () => {
         done ? setDone(false) :  setDone(true);

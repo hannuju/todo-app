@@ -5,27 +5,27 @@ const dummyData = [
     {
         id: 1,
         title: "Bank appointment",
-        checkbox: true
+        done: true
     },
     {
         id: 2,
         title: "Gym",
-        checkbox: false
+        done: false
     },
     {
         id: 3,
         title: "Grocerie shopping",
-        checkbox: false
+        done: false
     },
     {
         id: 4,
         title: "Clean garage",
-        checkbox: false
+        done: false
     },
     {
         id: 5,
         title: "Grandma's birthday",
-        checkbox: false
+        done: false
     },
     
 ]
@@ -34,7 +34,7 @@ export const TodoList = () => {
     return (
         <div className="todo-list">
             {dummyData.map((item) => 
-                <TodoItem key={item.id} title={item.title} checkbox={item.checkbox}></TodoItem>
+                <TodoItem key={item.id} title={item.title} done={item.done}></TodoItem>
             )}
         </div>
     )
